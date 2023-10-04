@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+      {
+          "name": "Zoo",
+          "type": "node",
+          "request": "launch",
+          "runtimeExecutable": "node",
+          "runtimeArgs": ["--nolazy", "-r", "ts-node/register"],
+          "args": ["src/main.ts"],
+          "cwd": "${workspaceFolder}",
+          "skipFiles": ["<node_internals>/**"],
+      }        
+  ]
+}

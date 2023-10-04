@@ -1,0 +1,16 @@
+{
+  "name": "dev-typescript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "zoo": "ts-node src/main.ts"        
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^20.8.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "description": ""
+}
