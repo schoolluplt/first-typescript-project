@@ -1,25 +1,30 @@
-import { Animal } from "./animal";
-import { AnimalSmart } from "./animal_smart";
-import { AnimalDumb } from "./animal_dumb";
-
-function mumuse(animal: Animal){
-    console.log(animal.hello())
-    console.log(animal.react("Lucie"));
-}
-
-let lion = new AnimalSmart("Roger", 190, true, 100);
-
-let zebra = new AnimalDumb("Louis", 100, true, 90);
-
-let elephant = new AnimalSmart("Lucie", 2000, false, 190);
+import { ITalk } from "./interfaces/i-talk";
+import { StaffAgent } from "./staff_agent";
+import { Zoo } from "./zoo";
 
 
-// console.log(lion.react("Lucie"));
-// console.log(zebra.react("Lucie"));
-// console.log(elephant.react("Lucie"));
+const myZoo = Zoo.mock();
 
-mumuse(lion);
-mumuse(zebra);
-mumuse(elephant);
+// function talkWith(talker: ITalk){
 
-console.log("fin");
+//     console.log(talker.talk("hello"));
+
+//     for (let sentence of talker.blabla()){
+//         console.log(sentence);
+//     }
+// }
+
+// console.log(myZoo);
+
+// for (let animal of myZoo.animals){
+//     talkWith(animal);
+// }
+
+
+// for (let staff of myZoo.staff){
+//     talkWith(staff);
+// }
+
+let staff = new StaffAgent("staff1");
+
+console.log(staff.goToWork());

@@ -1,10 +1,9 @@
-export abstract class Store {
+export  class Store {
 
     nom: string;
     turnover: number;
     employees: number;
 
-    abstract salary():string;
 
     constructor(nom: string, turnover: number, employees: number){
         this.nom = nom;
