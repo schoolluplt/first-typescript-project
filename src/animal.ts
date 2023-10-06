@@ -1,6 +1,6 @@
 export abstract class Animal {
 
-    nom: string;
+    readonly nom: string;
     poids: number;
     intelligent: boolean;
     qi: number;
